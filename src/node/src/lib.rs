@@ -121,6 +121,7 @@ pub fn parse_grenades(path_or_buf: Either<String, Buffer>) -> napi::Result<Value
   Ok(s)
 }
 
+
 #[napi]
 pub fn parse_convars(path_or_buf: Either<String, Buffer>) -> napi::Result<Value> {
   let bytes = resolve_byte_type(path_or_buf)?;
